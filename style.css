@@ -1,0 +1,200 @@
+/* ===== RESET GERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #0d3b66;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    padding: 3rem 1.5rem;
+    margin: 2rem 0;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #0d3b66;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== PARÁGRAFOS ===== */
+section p {
+    color: #222;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+/* ===== IMAGENS ===== */
+section img {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #0d3b66;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f4d35e;
+}
+
+/* ===== BOTÕES ===== */
+button {
+    background-color: #0d3b66;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button a {
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0b335a;
+    transform: translateY(-2px);
+}
+
+/* ===== LISTAS ===== */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 0.8rem;
+}
+
+/* ===== ICONE DE REDES SOCIAIS ===== */
+section i {
+    font-size: 1.8rem;
+    margin-right: 12px;
+    color: #0d3b66;
+    transition: color 0.3s, transform 0.2s;
+}
+
+section i:hover {
+    color: #f4d35e;
+    transform: scale(1.1);
+}
+
+/* ===== TABELA ===== */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+table th {
+    background-color: #0d3b66;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+    section {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+
+    section img {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1.5rem 1rem;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+}
